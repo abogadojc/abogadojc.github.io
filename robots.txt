@@ -1,0 +1,5 @@
+
+User-Agent: *
+Disallow: /templates
+
+Sitemap: http://abogadojc.com/sitemap.xml

@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Kanun</title>
+        <title>AbogadoJC</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Law Firm Website Template" name="keywords">
-        <meta content="Law Firm Website Template" name="description">
+        <meta content="abogadojc, abogadojc.com" name="keywords">
+        <meta content="Abogado JC, es una prestigiosa firma de asesoría jurídica con una larga trayectoria en el país" name="description">
 
         <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+        <link rel="icon" href="data:,">
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
@@ -32,7 +32,7 @@
                         <div class="col-lg-3">
                             <div class="logo">
                                 <a href="index.html">
-                                    <h1 id="name" style="font-size: xx-large;" >Kanun</h1>
+                                    <h1 template=true id="name" style="font-size: xx-large;" >AbogadoJC</h1>
                                     <!-- <img src="img/logo.jpg" alt="Logo"> -->
                                 </a>
                             </div>
@@ -40,18 +40,18 @@
                         <div class="col-lg-9">
                             <div class="top-bar-right">
                                 <div class="text">
-                                    <h2 id="mi_horario" >8:00 - 9:00</h2>
-                                    <p>Opening Hour Mon - Fri</p>
+                                    <h2 template=true id="horario_atencion" >8:00 - 9:00</h2>
+                                    <p template=true id="dias_laborables">Opening Hour Mon - Fri</p>
                                 </div>
                                 <div class="text">
-                                    <h2 id="phone">+123 456 7890</h2>
-                                    <p>Call Us For Free Consultation</p>
+                                    <h2 template=true id="phone">+123 456 7890</h2>
+                                    <p>Llamanos</p>
                                 </div>
                                 <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a template=true id="twitter_link" target="_blank"  href=""><i class="fab fa-twitter"></i></a>
+                                    <a template=true id="facebook_link" target="_blank"  href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a template=true id="linkedin_link" target="_blank"  href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a template=true id="instagram_link" target="_blank"  href=""><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -72,11 +72,11 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto">
                                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                                <a href="about.html" class="nav-item nav-link">About</a>
-                                <a href="service.html" class="nav-item nav-link">Practice</a>
-                                <a href="team.html" class="nav-item nav-link">Attorneys</a>
-                                <a href="portfolio.html" class="nav-item nav-link">Case Studies</a>
-                                <div class="nav-item dropdown">
+                                <a style="display: none;" href="about.html" class="nav-item nav-link">About</a>
+                                <a style="display: none;" href="service.html" class="nav-item nav-link">Practice</a>
+                                <a style="display: none;" href="team.html" class="nav-item nav-link">Attorneys</a>
+                                <a style="display: none;" href="portfolio.html" class="nav-item nav-link">Case Studies</a>
+                                <div style="display: none;" class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu">
                                         <a href="blog.html" class="dropdown-item">Blog Page</a>
@@ -86,7 +86,10 @@
                                 <a href="contact.html" class="nav-item nav-link">Contact</a>
                             </div>
                             <div class="ml-auto">
-                                <a class="btn" href="https://htmlcodex.com/law-firm-website-template">Get Appointment</a>
+                                <a id="cita_form_url" template=true class="btn" target="_blank" 
+                                href="https://htmlcodex.com/law-firm-website-template">
+                                    <p id="cita_titulo" template=true style="margin: unset;" >Get Appointment</p>
+                                </a>
                             </div>
                         </div>
                     </nav>
@@ -106,27 +109,33 @@
                     <div class="carousel-item active">
                         <img src="img/carousel-1.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <h1 class="animated fadeInLeft">Luchamos por tu justicia</h1>
-                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                            <h1 template=true id="mensaje_1_titulo" class="animated fadeInLeft">Luchamos por tu justicia</h1>
+                            <p template=true  id="mensaje_1_descripcion" class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
+                            <a id="consulta_form_url" template=true class="btn animated fadeInUp" href="#" target="_blank" >
+                                <p id="consulta_titulo" template=true style="margin: unset;" >Get Appointment</p>
+                            </a>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <img src="img/carousel-2.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <h1 class="animated fadeInLeft">Te defendemos</h1>
-                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                            <h1 template=true id="mensaje_2_titulo" class="animated fadeInLeft">Te defendemos</h1>
+                            <p template=true  id="mensaje_2_descripcion" class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
+                            <a id="consulta_form_url" template=true class="btn animated fadeInUp" href="#" target="_blank" >
+                                <p id="consulta_titulo" template=true style="margin: unset;" >Get Appointment</p>
+                            </a>
                         </div>
                     </div>
 
                     <div class="carousel-item">
                         <img src="img/carousel-3.jpg" alt="Carousel Image">
                         <div class="carousel-caption">
-                            <h1 id="mensaje_3_titulo" class="animated fadeInLeft">We fight for your privilege</h1>
-                            <p class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
-                            <a class="btn animated fadeInUp" href="#">Get free consultation</a>
+                            <h1 template=true id="mensaje_3_titulo" class="animated fadeInLeft">We fight for your privilege</h1>
+                            <p template=true  id="mensaje_3_descripcion" class="animated fadeInRight">Lorem ipsum dolor sit amet elit. Mauris odio mauris...</p>
+                            <a id="consulta_form_url" template=true class="btn animated fadeInUp" href="#" target="_blank" >
+                                <p id="consulta_titulo" template=true style="margin: unset;" >Get Appointment</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -192,16 +201,16 @@
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="section-header">
-                                <h2>Learn About Us</h2>
+                                <h2 template=true id="acerca_titulo">Learn About Us</h2>
                             </div>
                             <div class="about-text">
-                                <p>
+                                <p  template=true id="acerca_parrafo1">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem.
                                 </p>
-                                <p>
+                                <p template=true id="acerca_parrafo2">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. Aenean consectetur convallis porttitor. Aliquam interdum at lacus non blandit.
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a style="display: none;" class="btn" href="">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +223,7 @@
             <div class="service">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Our Practices Areas</h2>
+                        <h2 template=true id="especialidades_titulo" >Our Practices Areas</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -222,11 +231,11 @@
                                 <div class="service-icon">
                                     <i class="fa fa-landmark"></i>
                                 </div>
-                                <h3>Civil Law</h3>
-                                <p>
+                                <h3 template=true id="especialidad_1_titulo" >Civil Law</h3>
+                                <p  template=true id="especialidad_1_descripcion" >
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a style="display:none" class="btn" href="">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -234,11 +243,11 @@
                                 <div class="service-icon">
                                     <i class="fa fa-users"></i>
                                 </div>
-                                <h3>Family Law</h3>
-                                <p>
+                                <h3 template=true id="especialidad_2_titulo" >Family Law</h3>
+                                <p  template=true id="especialidad_2_descripcion" >
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a style="display:none"  class="btn" href="">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -246,11 +255,11 @@
                                 <div class="service-icon">
                                     <i class="fa fa-hand-holding-usd"></i>
                                 </div>
-                                <h3>Business Law</h3>
-                                <p>
+                                <h3 template=true id="especialidad_3_titulo" >Business Law</h3>
+                                <p  template=true id="especialidad_3_descripcion" >
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a style="display:none"  class="btn" href="">Learn More</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
@@ -258,14 +267,14 @@
                                 <div class="service-icon">
                                     <i class="fa fa-graduation-cap"></i>
                                 </div>
-                                <h3>Education Law</h3>
-                                <p>
+                                <h3 template=true id="especialidad_4_titulo" >Education Law</h3>
+                                <p  template=true id="especialidad_4_descripcion" >
                                     Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
                                 </p>
-                                <a class="btn" href="">Learn More</a>
+                                <a style="display:none"  class="btn" href="">Learn More</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div style="display:none" class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
                                     <i class="fa fa-gavel"></i>
@@ -277,7 +286,7 @@
                                 <a class="btn" href="">Learn More</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div style="display:none" class="col-lg-4 col-md-6">
                             <div class="service-item">
                                 <div class="service-icon">
                                     <i class="fa fa-globe"></i>
@@ -301,7 +310,7 @@
                     <div class="row">
                         <div class="col-md-7">
                             <div class="section-header">
-                                <h2>Why Choose Us</h2>
+                                <h2 template=true id="porque_elegirnos_titulo" >Why Choose Us</h2>
                             </div>
                             <div class="row align-items-center feature-item">
                                 <div class="col-5">
@@ -310,8 +319,8 @@
                                     </div>
                                 </div>
                                 <div class="col-7">
-                                    <h3>Best law practices</h3>
-                                    <p>
+                                    <h3 template=true id="razon_1_titulo" >Best law practices</h3>
+                                    <p  template=true id="razon_1_descripcion" >
                                         Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
                                     </p>
                                 </div>
@@ -323,8 +332,8 @@
                                     </div>
                                 </div>
                                 <div class="col-7">
-                                    <h3>Efficiency & Trust</h3>
-                                    <p>
+                                    <h3 template=true id="razon_2_titulo" >Efficiency & Trust</h3>
+                                    <p  template=true id="razon_2_descripcion" >
                                         Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
                                     </p>
                                 </div>
@@ -336,8 +345,8 @@
                                     </div>
                                 </div>
                                 <div class="col-7">
-                                    <h3>Results you deserve</h3>
-                                    <p>
+                                    <h3 template=true id="razon_3_titulo" >Results you deserve</h3>
+                                    <p  template=true id="razon_3_descripcion" >                                    
                                         Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate.
                                     </p>
                                 </div>
@@ -358,27 +367,30 @@
             <div class="team">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Meet Our Expert Attorneys</h2>
+                        <h2 template=true id="equipo_titulo" >Meet Our Expert Attorneys</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
-                                    <img src="img/team-1.jpg" alt="Team Image">
+                                    <img template=true id="profesional_1_foto_url" src="img/team-1.jpg" alt="Team Image">
                                 </div>
                                 <div class="team-text">
-                                    <h2>Adam Phillips</h2>
-                                    <p>Business Consultant</p>
+                                    <h2  template=true id="profesional_1_nombre"  >Adam Phillips</h2>
+                                    <p  template=true id="profesional_1_cargo" >Business Consultant</p>
+                                    <p  template=true id="profesional_1_resumen" >
+                                        Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non
+                                    </p>                                    
                                     <div class="team-social">
-                                        <a class="social-tw" href=""><i class="fab fa-twitter"></i></a>
-                                        <a class="social-fb" href=""><i class="fab fa-facebook-f"></i></a>
-                                        <a class="social-li" href=""><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                                        <a template=true id="twitter_link" target="_blank"  href=""><i class="fab fa-twitter"></i></a>
+                                        <a template=true id="facebook_link" target="_blank"  href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a template=true id="linkedin_link" target="_blank"  href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a template=true id="instagram_link" target="_blank"  href=""><i class="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div style="display:none" class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-2.jpg" alt="Team Image">
@@ -395,7 +407,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div style="display:none"  class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-3.jpg" alt="Team Image">
@@ -412,7 +424,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
+                        <div style="display:none"  class="col-lg-3 col-md-6">
                             <div class="team-item">
                                 <div class="team-img">
                                     <img src="img/team-4.jpg" alt="Team Image">
@@ -436,7 +448,7 @@
 
 
             <!-- FAQs Start -->
-            <div class="faqs">
+            <div style="display:none" class="faqs">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -522,128 +534,62 @@
             <div class="testimonial">
                 <div class="container">
                     <div class="section-header">
-                        <h2>Review From Client</h2>
+                        <h2 id="testimonio_titulo" template="true" >Review From Client</h2>
                     </div>
                     <div class="owl-carousel testimonials-carousel">
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
+                                <div  style="display:none" class="col-3">
                                     <img src="img/testimonial-1.jpg" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2 id="testimonio_1_nombre" template=true >Client Name</h2>
+                                    <p id="testimonio_1_profesion" template="true" >Profession</p>
                                 </div>
                                 <div class="col-12">
-                                    <p>
+                                    <p id="testimonio_1_resumen" template="true" >
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
                                     </p>
                                 </div>
                             </div>
                         </div>
+
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-4.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
+                                <div  style="display:none" class="col-3">
                                     <img src="img/testimonial-1.jpg" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2 id="testimonio_2_nombre" template=true >Client Name</h2>
+                                    <p id="testimonio_2_profesion" template="true" >Profession</p>
                                 </div>
                                 <div class="col-12">
-                                    <p>
+                                    <p id="testimonio_2_resumen" template="true" >
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        
                         <div class="testimonial-item">
                             <i class="fa fa-quote-right"></i>
                             <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-2.jpg" alt="">
+                                <div  style="display:none" class="col-3">
+                                    <img src="img/testimonial-1.jpg" alt="">
                                 </div>
                                 <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
+                                    <h2 id="testimonio_3_nombre" template=true >Client Name</h2>
+                                    <p id="testimonio_3_profesion" template="true" >Profession</p>
                                 </div>
                                 <div class="col-12">
-                                    <p>
+                                    <p id="testimonio_3_resumen" template="true" >
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="testimonial-item">
-                            <i class="fa fa-quote-right"></i>
-                            <div class="row align-items-center">
-                                <div class="col-3">
-                                    <img src="img/testimonial-3.jpg" alt="">
-                                </div>
-                                <div class="col-9">
-                                    <h2>Client Name</h2>
-                                    <p>Profession</p>
-                                </div>
-                                <div class="col-12">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -651,7 +597,7 @@
 
 
             <!-- Blog Start -->
-            <div class="blog">
+            <div style="display: none;" class="blog">
                 <div class="container">
                     <div class="section-header">
                         <h2>Latest From Blog</h2>
@@ -762,7 +708,7 @@
             
             
             <!-- Newsletter Start -->
-            <div class="newsletter">
+            <div style="display: none;" class="newsletter">
                 <div class="container">
                     <div class="section-header">
                         <h2>Subscribe Our Newsletter</h2>
@@ -782,51 +728,49 @@
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-about">
-                                <h2>About Us</h2>
-                                <p>
+                                <h2 template=true id="acerca_titulo" >About Us</h2>
+                                <p template=true id="acerca_parrafo1">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu lectus a leo tristique dictum nec non quam. Suspendisse convallis, tortor eu placerat rhoncus, lorem quam iaculis felis, sed eleifend lacus neque id eros. Integer convallis volutpat neque
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-8">
-                            <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Services Areas</h2>
-                                <a href="">Civil Law</a>
-                                <a href="">Family Law</a>
-                                <a href="">Business Law</a>
-                                <a href="">Education Law</a>
-                                <a href="">Immigration Law</a>
+                            <div style="display:none" class="col-md-6 col-lg-4">
+                                <div class="footer-link">
+                                    <h2>Services Areas</h2>
+                                    <a href="">Civil Law</a>
+                                    <a href="">Family Law</a>
+                                    <a href="">Business Law</a>
+                                    <a href="">Education Law</a>
+                                    <a href="">Immigration Law</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-link">
-                                <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
+                            <div style="display:none"  class="col-md-6 col-lg-4">
+                                <div class="footer-link">
+                                    <h2>Useful Pages</h2>
+                                    <a href="">About Us</a>
+                                    <a href="">Practices</a>
+                                    <a href="">Attorneys</a>
+                                    <a href="">Case Studies</a>
+                                    <a href="">FAQs</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-contact">
-                                <h2>Get In Touch</h2>
-                                <p id="address"><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                <p id="correo" ><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                                <p><i class="fa fa-envelope"></i>info@example.com</p>
-                                <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="footer-contact">
+                                    <h2>Get In Touch</h2>
+                                    <p ><i class="fa fa-map-marker-alt"></i><span template=true id="direccion" >Lima Peru</span></p>
+                                    <p ><i class="fa fa-phone-alt"></i><span template=true id="phone" >12456789</span></p>
+                                    <p ><i class="fa fa-envelope"></i><span template=true id="correo" >info@example.com</span></p>
+                                    <div class="footer-social">
+                                        <a template=true id="twitter_link" target="_blank"  href=""><i class="fab fa-twitter"></i></a>
+                                        <a template=true id="facebook_link" target="_blank"  href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a template=true id="instagram_link" target="_blank" href=""><i class="fab fa-instagram"></i></a>
+                                        <a template=true id="linkedin_link" target="_blank"  href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
                 <div class="container footer-menu">
